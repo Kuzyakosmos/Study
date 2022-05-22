@@ -1,4 +1,4 @@
-package object;
+package core.object;
 
 public class Main {
     /*Главная аксиома: если хэшкоды разные, то и объекты гарантированно разные

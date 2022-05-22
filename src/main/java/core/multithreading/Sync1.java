@@ -1,11 +1,11 @@
-package multithreading;
+package core.multithreading;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 //пример использования synchronized
-public class Sync {
+public class Sync1 {
     public static void main(String[] args) {
         Worker worker = new Worker();
         worker.main();

@@ -1,14 +1,14 @@
-package multithreading;
+package core.multithreading;
 
-public class Test {
+public class Sync2 {
     private int counter;
 
     public static void main(String[] args) throws InterruptedException {
         //при созданиии объекта создается сущность Monitor
         //Эта сущность в один момент времени может быть только у одного потока
         //он нужен чтобы джава понимала, что с объектом уже взаимодействует поток
-        Test test = new Test();
-        test.doWork();
+        Sync2 sync2 = new Sync2();
+        sync2.doWork();
     }
 
     //ключевое слово synchronized применимо к методам,
