@@ -1,7 +1,5 @@
 package core.exceptions;
 
-import java.io.IOException;
-
 public class Test {
     public static void main(String[] args) {
         try {
@@ -16,14 +14,20 @@ public class Test {
             System.out.println(er.getMessage());
         }
 
-//        throw new RuntimeException("Сорян");
+
+
+        throw new RuntimeException("Сорян");
     }
 
     static void throwException() {
-        throw new MyException("Исключение");
+        throw new MyRuntimeException("Исключение");
     }
 
     static void throwError() {
         throw new MyError("Ошибка");
+    }
+
+    static void throwThrowable() throws MyThrowable {
+        throw new MyThrowable("Throwable");
     }
 }
