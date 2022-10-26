@@ -1,4 +1,4 @@
-package core.multithreading.future;
+package multithreading.future;
 
 import java.util.Random;
 import java.util.concurrent.ExecutionException;

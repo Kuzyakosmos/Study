@@ -1,6 +1,7 @@
-package core.multithreading;
+package multithreading.threadpool;
 
 import java.util.LinkedList;
+import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -21,20 +22,31 @@ public class ThreadPool {
     }
 }
 
-class Work implements Runnable {
+class Work implements Callable {
     private int id;
 
     public Work(int id) {
         this.id = id;
     }
 
+//    @Override
+//    public void run() {
+//        try {
+//            Thread.sleep(5000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+//        System.out.println("Work " + id + " was completed");
+//    }
+
     @Override
-    public void run() {
-        try {
+    public Object call() throws Exception {
+//        try {
             Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
         System.out.println("Work " + id + " was completed");
+        return null;
     }
 }

@@ -1,4 +1,4 @@
-package core.multithreading.volotile;
+package multithreading.volotile;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,7 +1,4 @@
-package core.multithreading.future;
-
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutionException;
+package multithreading.future;
 
 public class Completable {
     public static void main(String[] args) {

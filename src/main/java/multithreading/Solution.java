@@ -1,4 +1,6 @@
-package core.multithreading;
+package multithreading;
+
+import java.util.concurrent.Executors;
 
 public class Solution {
     public static void main(String[] args) {
@@ -10,5 +12,6 @@ public class Solution {
 
         }
         return 0;
+        Executors
     }
 }
